@@ -1,1 +1,1 @@
-Ultima atualização 14/12/2024 00:26    Criação do backend (filtro e pesquisa) BACKEND
+Ultima atualização 17/12/2024    correção de bugs do botao do menu, estilização das imagens nas divs;
