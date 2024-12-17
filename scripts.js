@@ -88,20 +88,21 @@ themeToggle.addEventListener("click", () => {
 //Função para carregar o nome do tema quando entra
 
 // Função de pesquisa
+// Função de pesquisa
 searchBtn.addEventListener("click", () => {
-  const query = searchBar.value.trim();
+  const query = searchBar.value.trim(); // Garante que não haja espaços desnecessários
   if (query === "") {
-    alert("Por favor, insira um termo de pesquisa.");
-    return;
+    alert("Por favor, insira um termo de pesquisa."); // Alerta se o campo estiver vazio
+    return; // Encerra a função se não houver entrada
   }
 
   // Mostra o indicador de carregamento
   loadingIndicator.style.display = "block";
-  resultsContainer.innerHTML = "";
+  resultsContainer.innerHTML = ""; // Limpa os resultados anteriores
 
   // Simula uma pesquisa com um atraso de 2 segundos
   setTimeout(() => {
-    loadingIndicator.style.display = "none";
+    loadingIndicator.style.display = "none"; // Esconde o indicador de carregamento
 
     // Simula resultados da pesquisa
     const results = [
@@ -127,17 +128,18 @@ searchBtn.addEventListener("click", () => {
 
     // Mostra os resultados na tela
     results.forEach((result) => {
-      const resultCard = document.createElement("div");
-      resultCard.className = "card";
+      // Cria dinamicamente cada card de resultado
+      const resultCard = document.createElement("div"); // Corrigido: cria um novo elemento div
+      resultCard.className = "result-card"; // Adiciona uma classe para estilização
       resultCard.innerHTML = `
                 <h3>${result.site}</h3>
                 <p><strong>Produto:</strong> ${result.product}</p>
                 <p><strong>Avaliação:</strong> ${result.rating} ⭐</p>
                 <p><strong>Preço:</strong> ${result.price}</p>
             `;
-      resultsContainer.appendChild(resultCard);
+      resultsContainer.appendChild(resultCard); // Adiciona o card ao container
     });
-  }, 2000);
+  }, 2000); // Simula o tempo de carregamento
 });
 
 /*-----------------------*/

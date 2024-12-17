@@ -41,12 +41,8 @@ aside.filters {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
 }
 
-.filters:hover {
-    transform: scale(1.05);
-}
 
 .filter-group {
     margin-bottom: 20px;
@@ -95,11 +91,16 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    margin-top: 25px;
 }
+.day-night {
+    margin-left: 1350px;
+    transform: translateY(-100%);
+  }
 
 .product-comparison:hover,
 .suggestions:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 .comparison-card, .suggestion-card {
@@ -109,6 +110,7 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
+
 }
 
 .comparison-card:hover,
