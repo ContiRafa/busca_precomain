@@ -19,6 +19,28 @@ body {
   min-height: 100vh;
 }
 
+.closeButton02{
+  background-color: transparent;
+  border: transparent;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.group{
+  display: flex;
+}
+
+.buttonchecked{
+  background-color: #fff;
+  border: transparent;
+  width: 100%;
+  height: 110%;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+
+}
+
 /* Cabeçalho */
 header {
   display: flex;
@@ -515,15 +537,16 @@ i {
 }
 
 .toggle {
-  position: absolute;
+  display: block;
   height: 40px;
   width: 40px;
   top: 20px;
   z-index: 1;
   cursor: pointer;
-  border-radius: 2px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  
 }
 
 .input02{

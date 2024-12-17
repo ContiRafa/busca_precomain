@@ -4,6 +4,9 @@ const searchBtn = document.getElementById("search-btn");
 const loadingIndicator = document.getElementById("loading");
 const resultsContainer = document.getElementById("results-container");
 const themeToggle = document.getElementById("theme-toggle");
+const botaochecado = document.getElementById("buttonchecked");
+const imagemchecada = document.getElementById("imagemchecada1");
+const toggle01 = document.getElementById("toggle");
 
 // Variável para controlar o estado do tema
 // Variável para armazenar o estado inicial do tema
@@ -166,7 +169,6 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("Slide fechado!");
 
       // Volta a exibir a .toggle e o botão inicial
-      toggle01.style.position = "absolute";
       toggle01.style.zIndex = "1";
       toggle01.style.top = "20px";
       toggle01.style.left = "20px";
@@ -184,4 +186,5 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.error("Botão de fechar não encontrado!");
   }
+
 });
