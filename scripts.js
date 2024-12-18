@@ -190,3 +190,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
+
+
+//-----------------------------------------------------------------------------------------------------------------//
+//altera o <title> de acordo com o primeiro objeto que ele pegar... obejto:  document.getElementById("alterTitle")
+const alterarTitulo = document.getElementById("alterTitle"); // Elemento que terá o texto alterado
+const elementos = document.getElementById("header010", "0101"); // Elemento <h1> da página
+const elementos2 = document.getElementById("0101"); // Elemento <h1> da página
+
+// Função para alterar o título
+alterarTitulo.textContent = elementos2.textContent + elementos.textContent; // Define o texto do elemento como o texto do <h1>
+//-----------------------------------------------------------------------------------------------------------------//

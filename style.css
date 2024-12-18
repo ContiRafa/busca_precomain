@@ -19,6 +19,9 @@ body {
   min-height: 100vh;
 }
 
+
+
+
 .closeButton02{
   background-color: transparent;
   border: transparent;
@@ -175,6 +178,10 @@ header #theme-toggle:hover {
   background: #444;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.tituloh6{
+  display: none;
 }
 
 /* Destaques */

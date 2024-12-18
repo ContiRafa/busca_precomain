@@ -6,6 +6,26 @@ const dynamicElements = document.querySelectorAll(
     "body, header, .filters, .product-comparison, .suggestions, footer, .comparison-card"
 );
 
+// Obtém os elementos do DOM
+const alterarTitulo = document.getElementById("alterTitle"); // Elemento que terá o texto alterado
+const elementos = document.querySelector("h1"); // Elemento <h1> da página
+
+// Função para alterar o título
+alterarTitulo.textContent = elementos.textContent; // Define o texto do elemento como o texto do <h1>
+
+//----------------------------//
+//tratamento de erro
+
+
+//if (alterarTitulo){
+ //  console.log("deu certo")
+
+///}else{
+//    console.log("nao deu")
+//}
+
+//------------------------------//
+
 const savedTheme = localStorage.getItem("darkMode");
 if (savedTheme === "enabled") {
     enableDarkTheme();
@@ -52,6 +72,7 @@ document.getElementById("apply-filters").addEventListener("click", () => {
 
     fetchFilteredProducts(brand, price, type);
 });
+
 
 // Função para buscar produtos filtrados com a integração das APIs (exemplo Mercado Livre)
 function fetchFilteredProducts(brand, price, type) {
@@ -123,3 +144,4 @@ function displayNoResultsMessage() {
     const resultsContainer = document.getElementById("comparison-results");
     resultsContainer.innerHTML = '<p>Nenhum produto encontrado com os filtros aplicados.</p>';
 }
+
