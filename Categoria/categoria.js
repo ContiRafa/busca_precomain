@@ -1,7 +1,9 @@
 // Alternância de tema
 const themeToggle = document.getElementById("theme-toggle");
+
+//const que seleciona automaticamente os elementos da página
 const dynamicElements = document.querySelectorAll(
-    "body, header, .filters, .product-comparison, .suggestions, footer"
+    "body, header, .filters, .product-comparison, .suggestions, footer, .comparison-card"
 );
 
 const savedTheme = localStorage.getItem("darkMode");
@@ -21,14 +23,19 @@ themeToggle.addEventListener("click", () => {
     }
 });
 
+//função MODO CLARO
 function enableDarkTheme() {
     document.body.classList.add("dark-theme");
     themeToggle.textContent = "☀️"; // Modo claro
     dynamicElements.forEach((el) => {
         el.classList.add("dark-theme");
     });
+
 }
 
+
+
+//função MODO ESCURO
 function disableDarkTheme() {
     document.body.classList.remove("dark-theme");
     themeToggle.textContent = "🌙"; // Modo escuro

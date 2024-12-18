@@ -91,7 +91,7 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    margin-top: 25px;
+    margin-top: 45px;
 }
 .day-night {
     margin-left: 1350px;
@@ -127,18 +127,43 @@ footer {
 
 /* Tema escuro */
 body.dark-theme {
-    background-color: #333;
-    color: #f5f5f5;
+    background-color: #090808ce;
+    color: #ffffff;
 }
 
-body.dark-theme header,
-body.dark-theme .filters,
-body.dark-theme .product-comparison,
-body.dark-theme .suggestions,
-body.dark-theme footer {
-    background-color: #222;
-    color: #f5f5f5;
+.dark-theme .filters,
+.dark-theme .product-comparison,
+.dark-theme .suggestions,
+.dark-theme {
+    background-color: #232222;
+    color: inherit;
 }
+
+/*borda do header*/
+.dark-theme{
+    border-radius: 5px;
+}
+
+.header-title01{
+    color: #45a049;
+    
+}
+#comparison-results{
+    color: #232222;
+}
+
+#preco01{
+    margin-top: -15px;
+}
+
+
+/* espaçamento entre o <h1> e as div's, para quando fazer a animação do hover, ele não se esbarrar.*/
+#comparison-results,
+#comparison-results{
+    margin-top: 8px;
+}
+
+
 
 body.dark-theme button {
     background-color: #4CAF50;
