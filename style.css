@@ -27,6 +27,7 @@ body {
   border: transparent;
   margin-left: -30px;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .group{
@@ -498,11 +499,13 @@ a {
   transition: 0.5s ease;
   margin-top: -20px;
   margin-left: -50px;
+  pointer-events: none;
 }
 
 .menu-bar {
   text-align: center;
   pointer-events: none;
+  
 }
 
 ul,
@@ -521,8 +524,11 @@ li a {
 
 li {
   margin-bottom: 40px;
-  margin-left: -300px;
+  /*------------------*/
+  margin-left: 25px; /*margem que pode sair fora do contexto dos itens do menu*/
+  /*-----------------*/
   margin-top: 10px;
+  pointer-events: auto;
 }
 
 i {
