@@ -5,15 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="alterTitle">Oi</title>
     <link rel="stylesheet" href="/Categoria/categoria.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <!--FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--CDN CLOUDFLARE PARA ICONES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="dark-theme">
 
     <header>
+        
+        <label>
+            <div class="slide" id="slide001">
+                <div class="controleItens">
+                    <h1 class="menu-bar">MENU</h1>
+                <div class="container01">
+                    <button id="control-Close" class="closeButton02"><img src="cancel_16799576.png" alt="" width="28px"></button>
+                </div>
+                <ul class="ul-gap">
+                    <li><a href="index.html" class="a-class"><i class="fa-solid fa-star"></i>INÍCIO</a></li>
+                    <li><a href="conta.html" class="a-class"><i class="fa-solid fa-user"></i>CONTA</a></li>
+                    <li><a href="sobre.html" class="a-class"><i class="fa-solid fa-book"></i>SOBRE</a></li>
+                    <li><a href="contato.html" class="a-class"><i class="fa-solid fa-phone"></i>CONTATO</a></li>
+                </ul>
+                </div>
+            </div>
+        </label>
         <div class="vision">
             <h1 class="header-title01">Encontre o Setup dos Seus Sonhos</h1>
-            <button id="theme-toggle" class="day-night">🌙</button>
+            <div class="themetoggle01">
+                <button id="theme-toggle" class="day-night">🌙</button>
+            </div>
+            <div class="toggle">
+                <button id="check01" class="buttonchecked"><img src="menu-principal (1).png" alt="" width="30px" height="32px" id="imagemchecada1" class="botaomenu"></button>
+            </div>
+
         </div>
+
+        
     </header>
 
     <div class="main-container">
@@ -65,5 +97,6 @@
     </footer>
 
     <script src="/Categoria/categoria.js"></script>
+    <script src="botao.js"></script>
 </body>
 </html>

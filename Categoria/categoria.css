@@ -7,7 +7,7 @@
 
 /* Cor de fundo, fontes e layout básico */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #f4f4f4;
     color: #333;
     padding: 20px;
@@ -73,7 +73,6 @@ aside.filters {
 
 button {
     padding: 12px 25px;
-    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
@@ -82,9 +81,6 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #45a049;
-}
 
 .product-comparison, .suggestions {
     flex: 1;
@@ -167,17 +163,6 @@ body.dark-theme {
 
 
 
-body.dark-theme button {
-    background-color: #4CAF50;
-}
-
-body.dark-theme button:hover {
-    background-color: #45a049;
-}
-
-
-
-
 
 .product-image {
     width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
@@ -185,3 +170,5 @@ body.dark-theme button:hover {
     margin-right: 10px;
     border-radius: 5px;
 }
+
+

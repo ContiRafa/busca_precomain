@@ -521,7 +521,7 @@ li a {
 
 li {
   margin-bottom: 40px;
-  margin-left: 30px;
+  margin-left: -300px;
   margin-top: 10px;
 }
 
@@ -692,4 +692,10 @@ i {
     .toggle .middle_line {
       width: 20px;
     }
+  }
+
+  .botaomenu{
+    margin-left: -15px;
+    margin-top: -5px;
+
   }
