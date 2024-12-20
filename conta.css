@@ -1,0 +1,160 @@
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #000; /* Cor do texto alterada para preto */
+}
+
+.container {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.account-title{
+    color: #000;
+}
+
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 2px solid #000000; /* Cor sólida da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno para dar mais destaque */
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s ease-out; /* Transição suave para a transformação e a sombra */
+    box-shadow: 0 8px 25px #1de84d7d; /* Sombra inicial */
+}
+
+/* Efeito de transformação e sombra ao passar o mouse */
+.profile-section:hover {
+    transform: scale(1.01); /* Aumento da escala ao passar o mouse */
+    box-shadow: 0 10px 30px #1de84d7d; /* Sombra mais intensa e maior ao passar o mouse */
+}
+
+.profile-section button{
+    margin-top: 10px;
+}
+
+
+.profile-photo img {
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.profile-photo{
+    display: grid;
+    gap: 10px;
+
+}
+
+
+.photo-actions button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.photo-actions button:hover {
+    background-color: #0056b3;
+}
+
+.account-info .info-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+
+.info-item h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #000; /* Cor do subtítulo alterada para preto */
+}
+
+.info-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #000; /* Cor do texto alterada para preto */
+}
+
+.info-item button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.info-item button:hover {
+    background-color: #1e7e34;
+}
+
+.info-item select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000; /* Cor do texto dentro do select alterada para preto */
+}
+
+.info-password {
+    margin-top: 10px;
+    color: #000; /* Cor do texto alterada para preto */
+    padding: 10px;
+    font-size: 14px;
+}
+.info-password button:hover{
+    background-color: #1e7e34;
+}
+
+.info-password button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-photo button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-photo button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra sutil ao passar o mouse */
+}
+
+
+.account01{
+    display: flex;
+    justify-content: center;
+}
