@@ -1,7 +1,8 @@
 ul,
 li {
   font-size: 18px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 ul{
@@ -13,8 +14,8 @@ ul{
 .menu-bar {
     text-align: center;
     pointer-events: none;
-    margin-left: -50px; /* Alinha o menu à esquerda */
-    padding: 30px;
+    margin-left: -150px; /* Alinha o menu à esquerda */
+    position: absolute;
   }
 
 
@@ -30,8 +31,8 @@ li a {
 }
 
 .container01{
-    margin-left: 300px;
-    margin-top: -40px;
+    margin-left: 200px;
+    margin-top: -70px;
 }
 
 .container01{
@@ -41,8 +42,10 @@ li a {
  .closeButton02{
     background-color: transparent;
     border: transparent;
-    margin-left: -30px;
     cursor: pointer;
+    height: 5px;
+    margin-top: 43px;
+  padding-left: 295px;
   }
 
 
@@ -98,14 +101,10 @@ li a {
 .ul-gap{
     margin-bottom: 40px;
     margin-left: -150px;
-    margin-top: 10px;
+    margin-top: 20px;
     text-decoration: none;
     
     
-}
-
-.controleItens{
-    margin-top: -75px;
 }
 
 i {
@@ -115,4 +114,10 @@ i {
   .botaomenu{
     margin-left: -10px;
 
+  }
+
+  .menu-content{
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
   }
