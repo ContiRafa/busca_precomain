@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="alterTitle">Setup Inteligente</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/conta.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/imgs/favicon-32x32.png" type="image/x-icon">
     <!--FONTES-->
@@ -46,7 +47,26 @@
                     <input type="text" id="search-bar" placeholder="Digite o nome da peça...">
                     <button id="search-btn">🔍 Buscar</button>
                 </section>
+
+
+                
             </nav>
+
+
+            <!--SETA DO SEGUNDO MENU-->
+            <nav id="nav-controls" class="nav01">
+                <div class="icons-user">
+                <img src="/imgs/foto_teste.jpg" alt="" width="40px" class="img-user">
+                <button class="seta" id="actionButton">
+                    <img src="/imgs/seta-para-baixo.png" alt="" width="30px" class="row-down">
+                </button>
+                </div>
+            <ul class="ul01" id="listaOrdenada">
+                <li><a href="/Html/conta.html">CONTA</a></li>
+                <li><a href="/Html/favoritos.html">FAVORITOS</a></li>
+                <li class="a000" id="sairConta"><a href="/Html/cadastro.html">SAIR</a></li>
+            </ul>
+        </nav>
             <div class="vision">
                 <h5 class="mode"></h5>
                 
@@ -79,5 +99,6 @@
     </footer>
 
     <script src="/JS/scripts.js"></script>
+    <script src="/JS/conta.js"></script>
 </body>
 </html>
