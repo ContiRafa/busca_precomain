@@ -118,46 +118,66 @@ i {
   .menu-bar {
     margin-left: 0; /* Remove a margem negativa para o menu */
     position: relative; /* Torna o menu relativo para não sair da tela */
+    text-align: center; /* Garante alinhamento central em dispositivos móveis */
+    
   }
 
   h1 {
     font-size: 24px; /* Reduz o tamanho da fonte do título */
     margin-top: 20px; /* Ajusta a margem superior */
+    text-align: center; /* Centraliza o título */
   }
 
   .container01 {
-    margin-left: 20px; /* Reduz a margem à esquerda */
-    margin-top: 20px; /* Ajusta a margem superior */
+    margin-left: 10px; /* Reduz a margem à esquerda */
+    margin-top: 10px; /* Ajusta a margem superior */
   }
 
   .closeButton02 {
-    margin-top: 20px; /* Ajusta a posição do botão de fechar */
-    padding-left: 20px; /* Ajusta o padding */
+    margin-top: 10px; /* Ajusta a posição do botão de fechar */
+    padding-left: 10px; /* Ajusta o padding */
+  }
+
+  .buttonchecked {
+    height: auto; /* Ajusta a altura do botão para se adaptar melhor */
+    width: 100%; /* Garante que o botão ocupe 100% da largura */
   }
 
   .toggle {
     transform: translateX(0) translateY(0); /* Ajusta a posição do botão de toggle */
     top: 10px; /* Ajusta a posição superior */
-    width: 35px; /* Ajusta o tamanho do botão */
-    height: 35px; /* Ajusta o tamanho do botão */
+    width: 30px; /* Ajusta o tamanho do botão */
+    height: 30px; /* Ajusta o tamanho do botão */
   }
 
   .themetoggle01 {
-    margin-top: 20px; /* Ajusta a margem superior */
+    margin-top: 10px; /* Ajusta a margem superior */
   }
 
   .slide {
     width: 100%; /* Torna o slide 100% da largura */
-    transform: translateX(0); /* Ajusta a posição do slide */
+    transform: translateX(-112%); /* Ajusta a posição do slide */
+    margin-top: 0; /* Remove margem superior */
   }
 
   .menu-content {
     flex-direction: column; /* Muda a direção do conteúdo do menu para coluna */
     margin-top: 0; /* Remove a margem superior */
+    text-align: center; /* Centraliza o conteúdo do menu */
   }
 
   .ul-gap {
     margin-left: 0; /* Remove a margem negativa */
     margin-bottom: 20px; /* Ajusta a margem inferior */
+    text-align: left; /* Alinha os itens da lista à esquerda */
+  }
+
+  i {
+    margin-right: 5px; /* Ajusta o espaçamento do ícone */
+  }
+
+  .botaomenu {
+    margin-left: 0; /* Remove margem à esquerda */
+    margin-top: 10px; /* Adiciona margem superior */
   }
 }
