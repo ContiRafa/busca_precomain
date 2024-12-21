@@ -356,7 +356,6 @@ footer .footer-content {
 
 .search-container {
   width: 800px;
-  margin-left: -120px;
   gap: 10px;
   display: flex;
 }

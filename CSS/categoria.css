@@ -22,7 +22,6 @@ header {
 }
 
 #theme-toggle {
-    
     border: none;
     font-size: 2rem;
     cursor: pointer;
@@ -42,7 +41,6 @@ aside.filters {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .filter-group {
     margin-bottom: 20px;
@@ -69,8 +67,6 @@ aside.filters {
     border-color: #4CAF50;
 }
 
-
-
 button {
     padding: 12px 25px;
     color: white;
@@ -81,7 +77,6 @@ button {
     transition: background-color 0.3s;
 }
 
-
 .product-comparison, .suggestions {
     flex: 1;
     background-color: #fff;
@@ -91,10 +86,11 @@ button {
     transition: transform 0.3s ease;
     margin-top: 45px;
 }
+
 .day-night {
     margin-left: 1350px;
     transform: translateY(-100%);
-  }
+}
 
 .product-comparison:hover,
 .suggestions:hover {
@@ -108,7 +104,6 @@ button {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
-
 }
 
 .comparison-card:hover,
@@ -137,32 +132,27 @@ body.dark-theme {
     color: inherit;
 }
 
-/*borda do header*/
-.dark-theme{
+.dark-theme {
     border-radius: 5px;
 }
 
-.header-title01{
+.header-title01 {
     color: #45a049;
-    
 }
-#comparison-results{
+
+#comparison-results {
     color: #232222;
 }
 
-#preco01{
+#preco01 {
     margin-top: -15px;
 }
 
-
-/* espaçamento entre o <h1> e as div's, para quando fazer a animação do hover, ele não se esbarrar.*/
+/* espaçamento entre o <h1> e as div's, para quando fazer a animação do hover, ele não se esbarrar. */
 #comparison-results,
-#comparison-results{
+#comparison-results {
     margin-top: 8px;
 }
-
-
-
 
 .product-image {
     width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
@@ -171,4 +161,84 @@ body.dark-theme {
     border-radius: 5px;
 }
 
+/* Media Queries para Responsividade */
 
+/* Quando a largura da tela for menor que 1200px (telas médias, como tablets em modo paisagem) */
+@media (max-width: 1200px) {
+    .main-container {
+        flex-direction: column; /* Coloca as seções em uma coluna */
+        gap: 20px;
+    }
+
+    aside.filters {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .product-comparison, .suggestions {
+        margin-top: 20px;
+    }
+}
+
+/* Quando a largura da tela for menor que 768px (telas pequenas, como tablets em modo retrato) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .main-container {
+        gap: 15px;
+    }
+
+    aside.filters {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product-comparison, .suggestions {
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    .comparison-card, .suggestion-card {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Quando a largura da tela for menor que 480px (telas extra pequenas, como smartphones) */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    .main-container {
+        gap: 10px;
+    }
+
+    aside.filters {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product-comparison, .suggestions {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .comparison-card, .suggestion-card {
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

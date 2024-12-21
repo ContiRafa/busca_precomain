@@ -1,0 +1,115 @@
+/* Estilos gerais */
+.nav01 {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icons-user {
+    display: flex;
+    align-items: center;
+}
+
+.seta {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.ul01 {
+    position: absolute;
+    top: 60px; /* Ajuste conforme a posição */
+    right: 0;
+    background-color: #fff;
+    list-style: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    min-width: 150px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.ul01 li {
+    padding: 10px;
+}
+
+.ul01 li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.ul01 li:hover {
+    background-color: #f0f0f0;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    animation: fadeIn 0.3s forwards;
+}
+
+.hide {
+    animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Move a lista para cima no início */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Posição final */
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0); /* Posição inicial */
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px); /* Move a lista para cima no final */
+    }
+}
+
+/* Media Query para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    .nav01 {
+        display: block; /* Muda a flexbox para block para facilitar o layout em telas pequenas */
+        align-items: flex-start; /* Alinha os itens no início */
+    }
+
+    .icons-user {
+        margin-bottom: 10px; /* Adiciona um pequeno espaçamento entre os ícones do usuário */
+    }
+
+    .seta {
+        font-size: 20px; /* Ajusta o tamanho do botão para telas menores */
+    }
+
+    .ul01 {
+        top: 50px; /* Ajusta a posição para não ficar tão abaixo */
+        right: 10px; /* Ajusta o alinhamento */
+        min-width: 120px; /* Diminui a largura mínima da lista */
+        padding-right: 10px; /* Ajusta o padding */
+    }
+
+    .ul01 li {
+        padding: 8px; /* Reduz o padding para otimizar em telas pequenas */
+    }
+
+    .ul01 li a {
+        font-size: 14px; /* Reduz o tamanho da fonte para facilitar a leitura */
+    }
+
+    /* Ajuste nas animações */
+    .show, .hide {
+        animation-duration: 0.2s; /* Reduz a duração das animações */
+    }
+}
