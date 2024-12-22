@@ -1,135 +1,216 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="alterTitle">conta</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/conta.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../imgs/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/conta.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../imgs/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <!--FONTES-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!--CDN CLOUDFLARE PARA ICONES-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="page-container">
-        <header>
-            <label>
-                
-                
-                <div class="logo">
-                    <a href="../Html/index.html"><img src="../imgs/setup2-removebg-preview.png" alt="" width="200px"></a>
-                    <div class="slide" id="slide001">
-                        <h1 class="menu-bar">MENU</h1>
-                        <div class="container01">
-                            <button id="control-Close" class="closeButton02"><img src="../imgs/cancel_16799576.png" alt="" width="28px"></button>
-                        </div>
-                        <ul class="ul-gap">
-                            <li><a href="../Html/index.html" class="a-class"><i class="fa-solid fa-star"></i>INÍCIO</a></li>
-                            <li><a href="../Html/conta.html" class="a-class"><i class="fa-solid fa-user"></i>CONTA</a></li>
-                            <li><a href="../Html/sobre.html" class="a-class"><i class="fa-solid fa-book"></i>SOBRE</a></li>
-                            <li><a href="../Html/contato.html" class="a-class"><i class="fa-solid fa-phone"></i>CONTATO</a></li>
-                            <li><a href="../Html/categoria.html" class="a-class"><i class="fa-solid fa-laptop"></i>MONTE SEU PC</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </label>
-            <nav> 
-                <section class="search-container">
-                    <div class="toggle">
-                    <button id="check01" class="buttonchecked"><img src="../imgs/menu-principal (1).png" alt="" width="30px" height="32px" id="imagemchecada1"></button>
-                </div>
-                    <input type="text" id="search-bar" placeholder="Digite o nome da peça...">
-                    <button id="search-btn">🔍 Buscar</button>
-                </section>
-            </nav>
-
-            <!--SETA DO SEGUNDO MENU-->
-            <nav id="nav-controls" class="nav01" >
-                <div class="icons-user">
-                    <img src="../imgs/usuario01.png" alt="" width="30px" class="img-user">
-                    <button class="seta" id="actionButton">
-                        <img src="../imgs/seta-para-baixo.png" alt="" width="30px" class="row-down">
-                    </button>
-                </div>
-                <ul class="ul01" id="listaOrdenada">
-                    <li><a href="../Html/conta.html">CONTA</a></li>
-                    <li><a href="../Html/favoritos.html">FAVORITOS</a></li>
-                    <li class="a000" id="sairConta"><a href="../Html/cadastro.html">SAIR</a></li>
-                </ul>
-            </nav>
-                       
-
-            <div class="vision">
-                <h5 class="mode"></h5>
-                <button id="theme-toggle" class="day-night">🌙</button>
+      <header>
+        <label>
+          <div class="logo">
+            <a href="../Html/index.html"
+              ><img
+                src="../imgs/setup2-removebg-preview.png"
+                alt=""
+                width="200px"
+            /></a>
+            <div class="slide" id="slide001">
+              <h1 class="menu-bar">MENU</h1>
+              <div class="container01">
+                <button id="control-Close" class="closeButton02">
+                  <img src="../imgs/cancel_16799576.png" alt="" width="28px" />
+                </button>
+              </div>
+              <ul class="ul-gap">
+                <li>
+                  <a href="../Html/index.html" class="a-class"
+                    ><i class="fa-solid fa-star"></i>INÍCIO</a
+                  >
+                </li>
+                <li>
+                  <a href="../Html/conta.html" class="a-class"
+                    ><i class="fa-solid fa-user"></i>CONTA</a
+                  >
+                </li>
+                <li>
+                  <a href="../Html/sobre.html" class="a-class"
+                    ><i class="fa-solid fa-book"></i>SOBRE</a
+                  >
+                </li>
+                <li>
+                  <a href="../Html/contato.html" class="a-class"
+                    ><i class="fa-solid fa-phone"></i>CONTATO</a
+                  >
+                </li>
+                <li>
+                  <a href="../Html/categoria.html" class="a-class"
+                    ><i class="fa-solid fa-laptop"></i>MONTE SEU PC</a
+                  >
+                </li>
+              </ul>
             </div>
-        </header>
-
-        <main>
-
-            <h6 class="tituloh6" id="0101">Setup Inteligente - </h6>
-
-            <div id="loading" class="hidden">🔄 Buscando...</div>
-            <div id="results" class="results-container">
-
+          </div>
+        </label>
+        <nav>
+          <section class="search-container">
+            <div class="toggle">
+              <button id="check01" class="buttonchecked">
+                <img
+                  src="../imgs/menu-principal (1).png"
+                  alt=""
+                  width="30px"
+                  height="32px"
+                  id="imagemchecada1"
+                />
+              </button>
             </div>
+            <input
+              type="text"
+              id="search-bar"
+              placeholder="Digite o nome da peça..."
+            />
+            <button id="search-btn">🔍 Buscar</button>
+          </section>
+        </nav>
 
-            
-        </main>
+        <!--SETA DO SEGUNDO MENU-->
+        <nav id="nav-controls" class="nav01">
+          <div class="icons-user">
+            <img
+              src="../imgs/usuario01.png"
+              alt=""
+              width="30px"
+              class="img-user"
+            />
+            <button class="seta" id="actionButton">
+              <img
+                src="../imgs/seta-para-baixo.png"
+                alt=""
+                width="30px"
+                class="row-down"
+              />
+            </button>
+          </div>
+          <ul class="ul01" id="listaOrdenada">
+            <li><a href="../Html/conta.html">CONTA</a></li>
+            <li><a href="../Html/favoritos.html">FAVORITOS</a></li>
+            <li class="a000" id="sairConta">
+              <a href="../Html/cadastro.html">SAIR</a>
+            </li>
+          </ul>
+        </nav>
 
-        <div class="container">
-            <div class="profile-section">
-                <div class="profile-photo">
-                    <h1 class="account-title">Sua Conta</h1>
-                    <img src="../imgs/usuario01.png" alt="Foto de perfil" class="profile-img">
-                    <input type="file" name="" id="" placeholder="teste" class="btn-change-photo">
-                </div>
-            </div>
-            
-            <div class="account-info">
-                <div class="info-item">
-                    <h2>Nome</h2>
-                    <p>Rafael Contieri</p>
-                    <button class="btn-edit">Editar</button>
-                </div>
-                
-                <div class="info-item">
-                    <h2>Endereço de e-mail</h2>
-                    <p>tailabol036@gmail.com</p>
-                    <button class="btn-edit">Editar</button>
-                </div>
-        
-                <div class="info-password">
-                    <h2>Sua Senha</h2>
-                    <p>************</p>
-                    <button class="btn-change-password">Alterar Senha</button>
-                </div>
-            </div>
+        <div class="vision">
+          <h5 class="mode"></h5>
+          <button id="theme-toggle" class="day-night">🌙</button>
         </div>
-        
+      </header>
+
+      <main>
+        <h6 class="tituloh6" id="0101">Setup Inteligente -</h6>
+
+        <div id="loading" class="hidden">🔄 Buscando...</div>
+        <div id="results" class="results-container"></div>
+      </main>
+
+      <div class="container">
+        <div class="profile-section">
+          <div class="profile-photo">
+            <h1 class="account-title">Sua Conta</h1>
+            <img
+              src="../imgs/usuario01.png"
+              alt="Foto de perfil"
+              class="profile-img"
+            />
+            <input
+              type="file"
+              name=""
+              id=""
+              placeholder="teste"
+              class="btn-change-photo"
+            />
+          </div>
+        </div>
+
+        <div class="account-info">
+            <div class="info-item">
+              <h2>Nome</h2>
+              <p id="user-name">NOME DO USUARIO</p>
+              <button class="btn-edit">Editar</button>
+            </div>
+  
+            <div class="info-item">
+              <h2>Endereço de e-mail</h2>
+              <p id="user-email">endereço do usuario</p>
+              <button class="btn-edit">Editar</button>
+            </div>
+  
+            <div class="info-password">
+              <h2>Sua Senha</h2>
+              <p id="user-password">Senha do usuario</p>
+              <button class="btn-change-password">Alterar Senha</button>
+            </div>
+          </div>
+      </div>
     </div>
 
-    
-
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Setup Gamer Inteligente | Todos os direitos reservados</p>
-            <p>Desenvolvido por GUIH_GPT | CONTIERI_GPT</p>
-        </div>
-        <div class="footer-links">
-            <a href="../Html/sobre.html">Sobre Nós</a> |
-            <a href="#">Política de Privacidade</a> |
-            <a href="#">Termos de Uso</a>
-        </div>
+      <div class="footer-content">
+        <p>
+          &copy; 2024 Setup Gamer Inteligente | Todos os direitos reservados
+        </p>
+        <p>Desenvolvido por GUIH_GPT | CONTIERI_GPT</p>
+      </div>
+      <div class="footer-links">
+        <a href="../Html/sobre.html">Sobre Nós</a> |
+        <a href="#">Política de Privacidade</a> |
+        <a href="#">Termos de Uso</a>
+      </div>
     </footer>
 
     <script src="../JS/scripts.js"></script>
     <script src="../JS/conta.js"></script>
-</body>
+    <script>
+      // Preencher as informações do usuário na conta
+      const nome = localStorage.getItem("nome");
+      const email = localStorage.getItem("email");
+      const senha = localStorage.getItem("senha");
+
+      if (nome && email) {
+        document.getElementById("user-name").textContent = nome;
+        document.getElementById("user-email").textContent = email;
+        document.getElementById("user-password").textContent = "*********";
+        
+      }
+    </script>
+  </body>
 </html>

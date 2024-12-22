@@ -72,8 +72,3 @@ window.onload = function() {
     // Inserindo o novo botão no corpo da página
     document.body.appendChild(novoBotao);
 };
-
-
-
-
-
