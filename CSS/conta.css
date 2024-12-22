@@ -58,6 +58,9 @@ h1 {
 .profile-photo{
     display: grid;
     gap: 10px;
+    justify-items: center;
+    border-radius: 1500px;
+
 }
 
 .photo-actions button {
@@ -173,6 +176,8 @@ h1 {
 .img-user{
     border-radius: 50px;
 }
+
+
 
 .icons-user{
     width: 150px;
@@ -342,3 +347,10 @@ h1 {
         width: 150px;
     }
 }
+
+.btn-change-photo{
+    display: grid;
+    justify-items: center;
+    margin-left: 60%;
+}
+
