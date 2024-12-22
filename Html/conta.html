@@ -123,7 +123,7 @@
           <ul class="ul01" id="listaOrdenada">
             <li><a href="../Html/conta.html">CONTA</a></li>
             <li><a href="../Html/favoritos.html">FAVORITOS</a></li>
-            <li class="a000" id="sairConta"><a href="../PHP/logout.php">SAIR</a></li>
+            <li class="a000" onclick="excluirDadosNavegacao()"><a href="">SAIR</a></li>
           </ul>
         </nav>
 
@@ -148,11 +148,12 @@
               src="../imgs/usuario01.png"
               alt="Foto de perfil"
               class="profile-img"
+              id="profileImage"
             />
             <input
               type="file"
               name=""
-              id=""
+              id="fileInput"
               placeholder="teste"
               class="btn-change-photo"
             />
@@ -160,24 +161,24 @@
         </div>
 
         <div class="account-info">
-            <div class="info-item">
-              <h2>Nome</h2>
-              <p id="user-name">NOME DO USUARIO</p>
-              <button class="btn-edit">Editar</button>
-            </div>
-  
-            <div class="info-item">
-              <h2>Endereço de e-mail</h2>
-              <p id="user-email">endereço do usuario</p>
-              <button class="btn-edit">Editar</button>
-            </div>
-  
-            <div class="info-password">
-              <h2>Sua Senha</h2>
-              <p id="user-password">Senha do usuario</p>
-              <button class="btn-change-password">Alterar Senha</button>
-            </div>
+          <div class="info-item">
+            <h2>Nome</h2>
+            <p id="user-name">NOME DO USUARIO</p>
+            <button class="btn-edit">Editar</button>
           </div>
+
+          <div class="info-item">
+            <h2>Endereço de e-mail</h2>
+            <p id="user-email">endereço do usuario</p>
+            <button class="btn-edit">Editar</button>
+          </div>
+
+          <div class="info-password">
+            <h2>Sua Senha</h2>
+            <p id="user-password">Senha do usuario</p>
+            <button class="btn-change-password">Alterar Senha</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -207,8 +208,45 @@
         document.getElementById("user-name").textContent = nome;
         document.getElementById("user-email").textContent = email;
         document.getElementById("user-password").textContent = "*********";
-        
       }
+      
+   // Acessar os elementos do HTML
+   const fileInput = document.getElementById("fileInput");
+  const profileImage = document.getElementById("profileImage");
+
+  // Verificar se já existe uma foto salva no localStorage quando a página carrega
+  window.addEventListener("load", () => {
+    const savedImage = localStorage.getItem("profileImage"); // Recupera a imagem salva
+    if (savedImage) {
+      profileImage.src = savedImage; // Se houver, exibe a imagem salva
+    }
+  });
+
+  // Adicionar um evento para quando o usuário escolher uma nova imagem
+  fileInput.addEventListener("change", function(event) {
+    const file = event.target.files[0]; // Pega o arquivo selecionado
+
+    // Verifica se um arquivo foi selecionado
+    if (file) {
+      const reader = new FileReader();
+
+      // Quando o arquivo for carregado, altere a imagem
+      reader.onload = function(e) {
+        const imageUrl = e.target.result; // URL da imagem carregada
+
+        // Atualiza a imagem de perfil na página
+        profileImage.src = imageUrl;
+
+        // Salva a URL da imagem no localStorage
+        localStorage.setItem("profileImage", imageUrl);
+      };
+
+      // Lê o arquivo selecionado como uma URL de dados (data URL)
+      reader.readAsDataURL(file);
+    }
+  });
+
+      
     </script>
   </body>
 </html>

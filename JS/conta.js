@@ -37,53 +37,41 @@ document.addEventListener("click", (event) => {
     }
 });
 
-// Espera a página carregar completamente
-// Certifique-se de que as variáveis 'sairContaItem', 'botao1', e 'botao2' estejam definidas corretamente
-// Certifique-se de que o 'sairConta' está corretamente selecionado
-const sairContaItem = document.getElementById('sairConta');  // Substitua pelo id real do item "SAIR"
-const botao1 = document.getElementById('botao1'); // Substitua pelo id real do Botão 1
-const botao2 = document.getElementById('botao2'); // Substitua pelo id real do Botão 2
-
-// Adiciona um ouvinte de evento para o clique no item "SAIR"
-sairContaItem.addEventListener('click', function(event) {
-    event.preventDefault(); // Impede o comportamento padrão de navegação (para fins de teste)
-
+function excluirDadosNavegacao() {
     // Faz a requisição para o arquivo PHP de logout
-    fetch('../PHP/logout.php') // Altere o caminho conforme necessário
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erro ao realizar o logout');
-            }
-            return response.json(); // Converte a resposta para JSON
-        })
-        .then(data => {
-            alert("Logout feito com sucesso!!"); // Alerta após logout bem-sucedido
-            window.location.href = '../Html/login.html'; // Redireciona para a página de login
-        })
-        .catch(error => {
-            console.error('Erro:', error); // Exibe erros no console
-            alert('Ocorreu um erro ao tentar fazer logout.'); // Alerta em caso de erro
-        });
-});
+    fetch('../PHP/logout.php', {
+        method: 'GET', // 'GET' porque o logout geralmente não requer um corpo de requisição
+        headers: {
+            'Content-Type': 'application/json' // Especifica que você está esperando uma resposta JSON
+        }
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Erro ao realizar o logout');
+        }
+        return response.json(); // Converte a resposta para JSON
+    })
+    .then(data => {
+        // Verifica a resposta JSON do PHP
+        if (data.message) {
+            // Limpar o localStorage
+            localStorage.removeItem('nome');
+            localStorage.removeItem('email');
+            localStorage.removeItem('senha');
 
-// Adiciona um ouvinte de evento para o clique no Botão 1
-botao1.addEventListener('click', function() {
-    alert("Você clicou no Botão 1!");
-});
+            // Redireciona para a página de login
+            alert(data.message); // Exibe a mensagem de sucesso do logout
+            window.location.replace('../HTML/login.html'); // Redireciona para o login
+        } else {
+            alert('Ocorreu um erro no servidor ao tentar realizar o logout.');
+        }
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+        alert('Ocorreu um erro ao tentar fazer logout.'); // Alerta em caso de erro
+    });
+}
 
-// Adiciona um ouvinte de evento para o clique no Botão 2
-botao2.addEventListener('click', function() {
-    alert("Você clicou no Botão 2!");
-});
 
-// Criando o novo botão
-const novoBotao = document.createElement('button');
-novoBotao.innerHTML = "Novo Botão"; // Defina o texto do novo botão
+/*----------------------------------------------------------------------------------------------------------*/
 
-// Adicionando um ouvinte de evento para o clique no novo botão
-novoBotao.addEventListener('click', function() {
-    alert("Você clicou no Novo Botão!");
-});
-
-// Inserindo o novo botão no corpo da página
-document.body.appendChild(novoBotao);

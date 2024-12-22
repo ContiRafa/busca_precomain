@@ -1,21 +1,10 @@
 <?php
-// Inicia a sessão
-session_start();
+session_start(); // Iniciar a sessão
 
-// Verifica se há uma sessão ativa e destrói todas as variáveis de sessão
-if (isset($_SESSION)) {
-    ("aqui ainda tem sessao");
-    session_unset(); // Remove todas as variáveis de sessão
-    session_destroy(); // Destroi a sessão
-}
+// Remover as variáveis de sessão
+session_unset();
+session_destroy();
 
-// Fecha a conexão com o banco de dados, se necessário
-// (este código é útil caso você precise fechar a conexão manualmente)
-if (isset($conn)) {
-    mysqli_close($conn); // Fecha a conexão com o banco de dados
-}
-
-// Redireciona o usuário para a página de login ou página inicial
-header('Location: ../Html/login.html');
-exit();
+// Retornar uma resposta JSON de sucesso
+echo json_encode(["message" => "Logout realizado com sucesso"]);
 ?>
